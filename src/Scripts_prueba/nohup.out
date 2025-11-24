@@ -1,0 +1,462 @@
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461176_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461176.fastq.gz ../../data/SRR/sampleGSM461176.fastq.gz ../../data/SRR/sampleGSM461176.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461177_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461177_2_clean.fastq.gz ../../data/SRR/sampleGSM461177_1.fastq.gz ../../data/SRR/sampleGSM461177_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461178_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461178_2_clean.fastq.gz ../../data/SRR/sampleGSM461178_1.fastq.gz ../../data/SRR/sampleGSM461178_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461179_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461179.fastq.gz ../../data/SRR/sampleGSM461179.fastq.gz ../../data/SRR/sampleGSM461179.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461180_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461180_2_clean.fastq.gz ../../data/SRR/sampleGSM461180_1.fastq.gz ../../data/SRR/sampleGSM461180_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461181_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461181_2_clean.fastq.gz ../../data/SRR/sampleGSM461181_1.fastq.gz ../../data/SRR/sampleGSM461181_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461182_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461182.fastq.gz ../../data/SRR/sampleGSM461182.fastq.gz ../../data/SRR/sampleGSM461182.fastq.gz
+Processing paired-end reads on 1 core ...
+Finished in 108.098 s (3.075 µs/read; 19.51 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         35,158,667
+
+== Read fate breakdown ==
+Pairs that were too short:          35,158,667 (100.0%)
+Pairs written (passing filters):             0 (0.0%)
+
+Total basepairs processed: 3,110,005,394 bp
+  Read 1: 1,555,002,697 bp
+  Read 2: 1,555,002,697 bp
+Quality-trimmed:           3,110,005,394 bp (100.0%)
+  Read 1: 1,555,002,697 bp
+  Read 2: 1,555,002,697 bp
+Total written (filtered):              0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Finished in 140.843 s (13.317 µs/read; 4.51 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,575,821
+
+== Read fate breakdown ==
+Pairs that were too short:             223,349 (2.1%)
+Pairs written (passing filters):    10,352,472 (97.9%)
+
+Total basepairs processed:   782,610,754 bp
+  Read 1:   391,305,377 bp
+  Read 2:   391,305,377 bp
+Quality-trimmed:              21,690,404 bp (2.8%)
+  Read 1:     8,338,734 bp
+  Read 2:    13,351,670 bp
+Total written (filtered):    752,071,242 bp (96.1%)
+  Read 1:   376,816,543 bp
+  Read 2:   375,254,699 bp
+Finished in 147.802 s (12.085 µs/read; 4.96 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,230,102
+
+== Read fate breakdown ==
+Pairs that were too short:           2,147,660 (17.6%)
+Pairs written (passing filters):    10,082,442 (82.4%)
+
+Total basepairs processed:   905,027,548 bp
+  Read 1:   452,513,774 bp
+  Read 2:   452,513,774 bp
+Quality-trimmed:             107,261,894 bp (11.9%)
+  Read 1:    18,376,433 bp
+  Read 2:    88,885,461 bp
+Total written (filtered):    700,497,641 bp (77.4%)
+  Read 1:   362,494,767 bp
+  Read 2:   338,002,874 bp
+Finished in 150.668 s (12.286 µs/read; 4.88 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,263,470
+
+== Read fate breakdown ==
+Pairs that were too short:           1,844,377 (15.0%)
+Pairs written (passing filters):    10,419,093 (85.0%)
+
+Total basepairs processed:   907,496,780 bp
+  Read 1:   453,748,390 bp
+  Read 2:   453,748,390 bp
+Quality-trimmed:              94,340,554 bp (10.4%)
+  Read 1:    15,805,875 bp
+  Read 2:    78,534,679 bp
+Total written (filtered):    730,379,573 bp (80.5%)
+  Read 1:   374,535,982 bp
+  Read 2:   355,843,591 bp
+Finished in 167.601 s (13.443 µs/read; 4.46 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,467,158
+
+== Read fate breakdown ==
+Pairs that were too short:             173,974 (1.4%)
+Pairs written (passing filters):    12,293,184 (98.6%)
+
+Total basepairs processed:   922,569,692 bp
+  Read 1:   461,284,846 bp
+  Read 2:   461,284,846 bp
+Quality-trimmed:              28,306,893 bp (3.1%)
+  Read 1:     7,769,969 bp
+  Read 2:    20,536,924 bp
+Total written (filtered):    886,933,072 bp (96.1%)
+  Read 1:   448,667,892 bp
+  Read 2:   438,265,180 bp
+Finished in 201.327 s (5.872 µs/read; 10.22 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         34,284,521
+
+== Read fate breakdown ==
+Pairs that were too short:          23,037,744 (67.2%)
+Pairs written (passing filters):    11,246,777 (32.8%)
+
+Total basepairs processed: 3,085,606,890 bp
+  Read 1: 1,542,803,445 bp
+  Read 2: 1,542,803,445 bp
+Quality-trimmed:           2,130,678,924 bp (69.1%)
+  Read 1: 1,065,339,462 bp
+  Read 2: 1,065,339,462 bp
+Total written (filtered):    590,225,086 bp (19.1%)
+  Read 1:   295,112,543 bp
+  Read 2:   295,112,543 bp
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461176_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461176.fastq.gz ../../data/SRR/sampleGSM461176.fastq.gz ../../data/SRR/sampleGSM461176.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461177_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461177_2_clean.fastq.gz ../../data/SRR/sampleGSM461177_1.fastq.gz ../../data/SRR/sampleGSM461177_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461178_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461178_2_clean.fastq.gz ../../data/SRR/sampleGSM461178_1.fastq.gz ../../data/SRR/sampleGSM461178_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461179_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461179.fastq.gz ../../data/SRR/sampleGSM461179.fastq.gz ../../data/SRR/sampleGSM461179.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461180_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461180_2_clean.fastq.gz ../../data/SRR/sampleGSM461180_1.fastq.gz ../../data/SRR/sampleGSM461180_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461181_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461181_2_clean.fastq.gz ../../data/SRR/sampleGSM461181_1.fastq.gz ../../data/SRR/sampleGSM461181_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 20 -q 25 -o ../../data/SRR/clean/sampleGSM461182_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461182.fastq.gz ../../data/SRR/sampleGSM461182.fastq.gz ../../data/SRR/sampleGSM461182.fastq.gz
+Processing paired-end reads on 1 core ...
+Finished in 413.149 s (23.194 µs/read; 2.59 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         17,812,866
+
+== Read fate breakdown ==
+Pairs that were too short:             515,054 (2.9%)
+Pairs written (passing filters):    17,297,812 (97.1%)
+
+Total basepairs processed: 2,671,929,900 bp
+  Read 1: 1,335,964,950 bp
+  Read 2: 1,335,964,950 bp
+Quality-trimmed:             438,359,430 bp (16.4%)
+  Read 1:   219,179,715 bp
+  Read 2:   219,179,715 bp
+Total written (filtered):  2,222,933,698 bp (83.2%)
+  Read 1: 1,111,466,849 bp
+  Read 2: 1,111,466,849 bp
+Finished in 111.921 s (3.183 µs/read; 18.85 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         35,158,667
+
+== Read fate breakdown ==
+Pairs that were too short:          35,158,667 (100.0%)
+Pairs written (passing filters):             0 (0.0%)
+
+Total basepairs processed: 3,110,005,394 bp
+  Read 1: 1,555,002,697 bp
+  Read 2: 1,555,002,697 bp
+Quality-trimmed:           3,110,005,394 bp (100.0%)
+  Read 1: 1,555,002,697 bp
+  Read 2: 1,555,002,697 bp
+Total written (filtered):              0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Finished in 141.394 s (13.370 µs/read; 4.49 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,575,821
+
+== Read fate breakdown ==
+Pairs that were too short:             223,349 (2.1%)
+Pairs written (passing filters):    10,352,472 (97.9%)
+
+Total basepairs processed:   782,610,754 bp
+  Read 1:   391,305,377 bp
+  Read 2:   391,305,377 bp
+Quality-trimmed:              21,690,404 bp (2.8%)
+  Read 1:     8,338,734 bp
+  Read 2:    13,351,670 bp
+Total written (filtered):    752,071,242 bp (96.1%)
+  Read 1:   376,816,543 bp
+  Read 2:   375,254,699 bp
+Finished in 147.505 s (12.028 µs/read; 4.99 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,263,470
+
+== Read fate breakdown ==
+Pairs that were too short:           1,844,377 (15.0%)
+Pairs written (passing filters):    10,419,093 (85.0%)
+
+Total basepairs processed:   907,496,780 bp
+  Read 1:   453,748,390 bp
+  Read 2:   453,748,390 bp
+Quality-trimmed:              94,340,554 bp (10.4%)
+  Read 1:    15,805,875 bp
+  Read 2:    78,534,679 bp
+Total written (filtered):    730,379,573 bp (80.5%)
+  Read 1:   374,535,982 bp
+  Read 2:   355,843,591 bp
+Finished in 147.524 s (12.062 µs/read; 4.97 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,230,102
+
+== Read fate breakdown ==
+Pairs that were too short:           2,147,660 (17.6%)
+Pairs written (passing filters):    10,082,442 (82.4%)
+
+Total basepairs processed:   905,027,548 bp
+  Read 1:   452,513,774 bp
+  Read 2:   452,513,774 bp
+Quality-trimmed:             107,261,894 bp (11.9%)
+  Read 1:    18,376,433 bp
+  Read 2:    88,885,461 bp
+Total written (filtered):    700,497,641 bp (77.4%)
+  Read 1:   362,494,767 bp
+  Read 2:   338,002,874 bp
+Finished in 167.748 s (13.455 µs/read; 4.46 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,467,158
+
+== Read fate breakdown ==
+Pairs that were too short:             173,974 (1.4%)
+Pairs written (passing filters):    12,293,184 (98.6%)
+
+Total basepairs processed:   922,569,692 bp
+  Read 1:   461,284,846 bp
+  Read 2:   461,284,846 bp
+Quality-trimmed:              28,306,893 bp (3.1%)
+  Read 1:     7,769,969 bp
+  Read 2:    20,536,924 bp
+Total written (filtered):    886,933,072 bp (96.1%)
+  Read 1:   448,667,892 bp
+  Read 2:   438,265,180 bp
+Finished in 199.117 s (5.808 µs/read; 10.33 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         34,284,521
+
+== Read fate breakdown ==
+Pairs that were too short:          23,037,744 (67.2%)
+Pairs written (passing filters):    11,246,777 (32.8%)
+
+Total basepairs processed: 3,085,606,890 bp
+  Read 1: 1,542,803,445 bp
+  Read 2: 1,542,803,445 bp
+Quality-trimmed:           2,130,678,924 bp (69.1%)
+  Read 1: 1,065,339,462 bp
+  Read 2: 1,065,339,462 bp
+Total written (filtered):    590,225,086 bp (19.1%)
+  Read 1:   295,112,543 bp
+  Read 2:   295,112,543 bp
+Finished in 410.109 s (23.023 µs/read; 2.61 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         17,812,866
+
+== Read fate breakdown ==
+Pairs that were too short:             515,054 (2.9%)
+Pairs written (passing filters):    17,297,812 (97.1%)
+
+Total basepairs processed: 2,671,929,900 bp
+  Read 1: 1,335,964,950 bp
+  Read 2: 1,335,964,950 bp
+Quality-trimmed:             438,359,430 bp (16.4%)
+  Read 1:   219,179,715 bp
+  Read 2:   219,179,715 bp
+Total written (filtered):  2,222,933,698 bp (83.2%)
+  Read 1: 1,111,466,849 bp
+  Read 2: 1,111,466,849 bp
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 25 -q 20 -o ../../data/SRR/clean/sampleGSM461176_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461176.fastq.gz ../../data/SRR/sampleGSM461176.fastq.gz ../../data/SRR/sampleGSM461176.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 25 -q 20 -o ../../data/SRR/clean/sampleGSM461177_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461177_2_clean.fastq.gz ../../data/SRR/sampleGSM461177_1.fastq.gz ../../data/SRR/sampleGSM461177_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 25 -q 20 -o ../../data/SRR/clean/sampleGSM461178_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461178_2_clean.fastq.gz ../../data/SRR/sampleGSM461178_1.fastq.gz ../../data/SRR/sampleGSM461178_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 25 -q 20 -o ../../data/SRR/clean/sampleGSM461179_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461179.fastq.gz ../../data/SRR/sampleGSM461179.fastq.gz ../../data/SRR/sampleGSM461179.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 25 -q 20 -o ../../data/SRR/clean/sampleGSM461180_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461180_2_clean.fastq.gz ../../data/SRR/sampleGSM461180_1.fastq.gz ../../data/SRR/sampleGSM461180_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 25 -q 20 -o ../../data/SRR/clean/sampleGSM461181_1_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461181_2_clean.fastq.gz ../../data/SRR/sampleGSM461181_1.fastq.gz ../../data/SRR/sampleGSM461181_2.fastq.gz
+Processing paired-end reads on 1 core ...
+This is cutadapt 4.5 with Python 3.10.18
+Command line parameters: -m 25 -q 20 -o ../../data/SRR/clean/sampleGSM461182_clean.fastq.gz -p ../../data/SRR/clean/sampleGSM461182.fastq.gz ../../data/SRR/sampleGSM461182.fastq.gz ../../data/SRR/sampleGSM461182.fastq.gz
+Processing paired-end reads on 1 core ...
+Finished in 144.843 s (13.696 µs/read; 4.38 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,575,821
+
+== Read fate breakdown ==
+Pairs that were too short:             208,637 (2.0%)
+Pairs written (passing filters):    10,367,184 (98.0%)
+
+Total basepairs processed:   782,610,754 bp
+  Read 1:   391,305,377 bp
+  Read 2:   391,305,377 bp
+Quality-trimmed:              13,721,429 bp (1.8%)
+  Read 1:     5,072,810 bp
+  Read 2:     8,648,619 bp
+Total written (filtered):    759,785,590 bp (97.1%)
+  Read 1:   380,141,258 bp
+  Read 2:   379,644,332 bp
+Finished in 155.939 s (12.750 µs/read; 4.71 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,230,102
+
+== Read fate breakdown ==
+Pairs that were too short:           2,011,427 (16.4%)
+Pairs written (passing filters):    10,218,675 (83.6%)
+
+Total basepairs processed:   905,027,548 bp
+  Read 1:   452,513,774 bp
+  Read 2:   452,513,774 bp
+Quality-trimmed:              68,694,570 bp (7.6%)
+  Read 1:    10,412,806 bp
+  Read 2:    58,281,764 bp
+Total written (filtered):    733,835,702 bp (81.1%)
+  Read 1:   372,433,989 bp
+  Read 2:   361,401,713 bp
+Finished in 159.099 s (12.973 µs/read; 4.62 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,263,470
+
+== Read fate breakdown ==
+Pairs that were too short:           1,657,065 (13.5%)
+Pairs written (passing filters):    10,606,405 (86.5%)
+
+Total basepairs processed:   907,496,780 bp
+  Read 1:   453,748,390 bp
+  Read 2:   453,748,390 bp
+Quality-trimmed:              61,971,387 bp (6.8%)
+  Read 1:    10,224,537 bp
+  Read 2:    51,746,850 bp
+Total written (filtered):    762,516,991 bp (84.0%)
+  Read 1:   385,473,914 bp
+  Read 2:   377,043,077 bp
+Finished in 172.457 s (13.833 µs/read; 4.34 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         12,467,158
+
+== Read fate breakdown ==
+Pairs that were too short:             180,174 (1.4%)
+Pairs written (passing filters):    12,286,984 (98.6%)
+
+Total basepairs processed:   922,569,692 bp
+  Read 1:   461,284,846 bp
+  Read 2:   461,284,846 bp
+Quality-trimmed:              17,034,101 bp (1.8%)
+  Read 1:     4,713,548 bp
+  Read 2:    12,320,553 bp
+Total written (filtered):    896,765,646 bp (97.2%)
+  Read 1:   451,132,721 bp
+  Read 2:   445,632,925 bp
+Finished in 348.403 s (9.909 µs/read; 6.05 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         35,158,667
+
+== Read fate breakdown ==
+Pairs that were too short:           7,637,182 (21.7%)
+Pairs written (passing filters):    27,521,485 (78.3%)
+
+Total basepairs processed: 3,110,005,394 bp
+  Read 1: 1,555,002,697 bp
+  Read 2: 1,555,002,697 bp
+Quality-trimmed:           1,229,679,410 bp (39.5%)
+  Read 1:   614,839,705 bp
+  Read 2:   614,839,705 bp
+Total written (filtered):  1,615,494,790 bp (51.9%)
+  Read 1:   807,747,395 bp
+  Read 2:   807,747,395 bp
+Finished in 383.217 s (11.178 µs/read; 5.37 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         34,284,521
+
+== Read fate breakdown ==
+Pairs that were too short:           5,631,801 (16.4%)
+Pairs written (passing filters):    28,652,720 (83.6%)
+
+Total basepairs processed: 3,085,606,890 bp
+  Read 1: 1,542,803,445 bp
+  Read 2: 1,542,803,445 bp
+Quality-trimmed:           1,193,529,226 bp (38.7%)
+  Read 1:   596,764,613 bp
+  Read 2:   596,764,613 bp
+Total written (filtered):  1,676,093,270 bp (54.3%)
+  Read 1:   838,046,635 bp
+  Read 2:   838,046,635 bp
+Finished in 441.714 s (24.797 µs/read; 2.42 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         17,812,866
+
+== Read fate breakdown ==
+Pairs that were too short:             176,011 (1.0%)
+Pairs written (passing filters):    17,636,855 (99.0%)
+
+Total basepairs processed: 2,671,929,900 bp
+  Read 1: 1,335,964,950 bp
+  Read 2: 1,335,964,950 bp
+Quality-trimmed:             213,414,378 bp (8.0%)
+  Read 1:   106,707,189 bp
+  Read 2:   106,707,189 bp
+Total written (filtered):  2,452,622,422 bp (91.8%)
+  Read 1: 1,226,311,211 bp
+  Read 2: 1,226,311,211 bp

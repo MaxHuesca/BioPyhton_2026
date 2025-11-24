@@ -1,0 +1,40 @@
+
+Project_Id	Project_Acc	Project_Data_Type	Project_Title	Project_Description	Organism_Name	
+552284	PRJNA552284	Raw sequence reads	Babesia divergens strain:Bd Rouen 1987 | cultivar:Babesia divergens human red blood cells culture	Babesia divergens is a tick-borne, obligate intraerythrocytic apicomplexa parasite responsible of cattle and human babesiosis. While cattle babesiosis produces significant economic annual losses to the livestock industry, human babesiosis is considered a recently emerging public health problem main due to its high mortality rate in splenectomized and other immunocompromised patients. A high-quality draft genome of B. divergens was sequenced using Illumina, 454 and PacBio sequencing platforms. The combining strategy designed will allow comparative genomics and synteny studies due to its continuity close to chromosome resolution.		
+
+The bioproject has this elinks:
+The bioporject ['552284'] has not link with gds
+The bioproject ['552284'] has 6 uids linked with sra
+the fisrts ones are:['8459553', '8459552', '8459551', '8459550', '8459549']
+The bioproject ['552284'] has 1 uids linked with genome,biosample
+the fisrts ones are:['12187113']
+
+Project_Id	Project_Acc	Project_Data_Type	Project_Title	Project_Description	Organism_Name	
+552284	PRJNA552284	Raw sequence reads	Babesia divergens strain:Bd Rouen 1987 | cultivar:Babesia divergens human red blood cells culture	Babesia divergens is a tick-borne, obligate intraerythrocytic apicomplexa parasite responsible of cattle and human babesiosis. While cattle babesiosis produces significant economic annual losses to the livestock industry, human babesiosis is considered a recently emerging public health problem main due to its high mortality rate in splenectomized and other immunocompromised patients. A high-quality draft genome of B. divergens was sequenced using Illumina, 454 and PacBio sequencing platforms. The combining strategy designed will allow comparative genomics and synteny studies due to its continuity close to chromosome resolution.		
+
+The bioproject has this elinks:
+The bioporject ['552284'] has not link with gds
+The bioproject ['552284'] has 6 uids linked with sra
+the fisrts ones are:['8459553', '8459552', '8459551', '8459550', '8459549']
+The bioproject ['552284'] has 1 uids linked with genome,biosample
+the fisrts ones are:['12187113']
+
+Project_Id	Project_Acc	Project_Data_Type	Project_Title	Project_Description	Organism_Name	
+552284	PRJNA552284	Raw sequence reads	Babesia divergens strain:Bd Rouen 1987 | cultivar:Babesia divergens human red blood cells culture	Babesia divergens is a tick-borne, obligate intraerythrocytic apicomplexa parasite responsible of cattle and human babesiosis. While cattle babesiosis produces significant economic annual losses to the livestock industry, human babesiosis is considered a recently emerging public health problem main due to its high mortality rate in splenectomized and other immunocompromised patients. A high-quality draft genome of B. divergens was sequenced using Illumina, 454 and PacBio sequencing platforms. The combining strategy designed will allow comparative genomics and synteny studies due to its continuity close to chromosome resolution.		
+
+The bioproject has this elinks:
+The bioporject ['552284'] has not link with gds
+The bioproject ['552284'] has 6 uids linked with sra
+the fisrts ones are:['8459553', '8459552', '8459551', '8459550', '8459549']
+The bioproject ['552284'] has 1 uids linked with genome,biosample
+the fisrts ones are:['12187113']
+
+Project_Id	Project_Acc	Project_Data_Type	Project_Title	Project_Description	Organism_Name	
+552284	PRJNA552284	Raw sequence reads	Babesia divergens strain:Bd Rouen 1987 | cultivar:Babesia divergens human red blood cells culture	Babesia divergens is a tick-borne, obligate intraerythrocytic apicomplexa parasite responsible of cattle and human babesiosis. While cattle babesiosis produces significant economic annual losses to the livestock industry, human babesiosis is considered a recently emerging public health problem main due to its high mortality rate in splenectomized and other immunocompromised patients. A high-quality draft genome of B. divergens was sequenced using Illumina, 454 and PacBio sequencing platforms. The combining strategy designed will allow comparative genomics and synteny studies due to its continuity close to chromosome resolution.		
+
+The bioproject has this elinks:
+The bioproject ['552284'] has not link with gds
+The bioproject ['552284'] has 6 uids linked with sra
+the fisrts ones are:['8459553', '8459552', '8459551', '8459550', '8459549']
+The bioproject ['552284'] has 1 uids linked with genome,biosample
+the fisrts ones are:['12187113']

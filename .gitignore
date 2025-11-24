@@ -1,0 +1,4 @@
+#Ignorar directorios con muchos archivos de prueba de las clases 
+
+results/Alineamientos/
+results/pasilla_ejemplo/

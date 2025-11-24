@@ -1,0 +1,55 @@
+Procesando sampleGSM461176
+Alineando single-end: sampleGSM461176
+Completado: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461176.sam
+Procesando sampleGSM461177
+Alineando paired-end sampleGSM461177
+Completado: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461177.sam
+Procesando sampleGSM461178
+Alineando paired-end sampleGSM461178
+Completado: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461178.sam
+Procesando sampleGSM461179
+Alineando single-end: sampleGSM461179
+Completado: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461179.sam
+Procesando sampleGSM461180
+Alineando paired-end sampleGSM461180
+Completado: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461180.sam
+Procesando sampleGSM461181
+Alineando paired-end sampleGSM461181
+Completado: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461181.sam
+Procesando sampleGSM461182
+Alineando single-end: sampleGSM461182
+Completado: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461182.sam
+Alineamientos completos
+Conversión de archivos SAM a BAM y ordenado
+Directorio: ../../results/pasilla_prueba/clean
+
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461176.sam
+Archivo ../../results/pasilla_prueba/clean/../aligned/sampleGSM461176.sam convertido a y ordenado
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461177.sam
+Archivo ../../results/pasilla_prueba/clean/../aligned/sampleGSM461177.sam convertido a y ordenado
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461178.sam
+Archivo ../../results/pasilla_prueba/clean/../aligned/sampleGSM461178.sam convertido a y ordenado
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461179.sam
+Archivo ../../results/pasilla_prueba/clean/../aligned/sampleGSM461179.sam convertido a y ordenado
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461180.sam
+Archivo ../../results/pasilla_prueba/clean/../aligned/sampleGSM461180.sam convertido a y ordenado
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461181.sam
+Archivo ../../results/pasilla_prueba/clean/../aligned/sampleGSM461181.sam convertido a y ordenado
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461182.sam
+Archivo ../../results/pasilla_prueba/clean/../aligned/sampleGSM461182.sam convertido a y ordenado
+Se especifico un archivo gff, iniciando la obtencion de las tablas
+Obteniendo tabla sampleGSM461176.count.txt de la muestra sampleGSM461176.sort.bam
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461176.sort.bam
+Obteniendo tabla sampleGSM461177.count.txt de la muestra sampleGSM461177.sort.bam
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461177.sort.bam
+Obteniendo tabla sampleGSM461178.count.txt de la muestra sampleGSM461178.sort.bam
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461178.sort.bam
+Obteniendo tabla sampleGSM461179.count.txt de la muestra sampleGSM461179.sort.bam
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461179.sort.bam
+Obteniendo tabla sampleGSM461180.count.txt de la muestra sampleGSM461180.sort.bam
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461180.sort.bam
+Obteniendo tabla sampleGSM461181.count.txt de la muestra sampleGSM461181.sort.bam
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461181.sort.bam
+Obteniendo tabla sampleGSM461182.count.txt de la muestra sampleGSM461182.sort.bam
+Procesando: ../../results/pasilla_prueba/clean/../aligned/sampleGSM461182.sort.bam
+Conteo de archivos completo
