@@ -1,4 +1,20 @@
-#Ignorar directorios con muchos archivos de prueba de las clases 
+# datos grandes
+data/
 
-results/Alineamientos/
+# resultados
+data/
 results/pasilla_ejemplo/
+results/pasilla_prueba/
+results/Alineamientos/
+
+
+# formatos bioinformáticos grandes
+*.fastq
+*.fq
+*.bam
+*.sam
+*.h5
+*.gz
+*.tar
+*.tar.gz
+*.fasrq.gz
