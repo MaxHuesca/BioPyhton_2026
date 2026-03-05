@@ -4,8 +4,9 @@ Program to make the differential expression analysis with a count matrix with th
 
 """ 
 import pandas as pd 
-import argparse, os
+import argparse
 import utils_md2 as ut 
+import subprocess
 
 
 
@@ -80,11 +81,17 @@ def main():
     DE_matrix, norm_matrix=ut.py_DESEQ2(count_trans,design_matrix) 
     
     #Plot the results 
-    ut.run_all_analyses(DE_matrix,norm_matrix,prefix=prefix,create=plots,pval_threshold=p_value,lfc_threshold=log_fold)
+    diff_exp_genes=ut.run_all_analyses(DE_matrix,norm_matrix,prefix=prefix,create=plots,pval_threshold=p_value,lfc_threshold=log_fold)
     
     #Finally we save the matrix with the diferentail expression data 
     DE_matrix.to_csv("../results/DE/DE_matrix.tsv",sep='\t', index=True, header=True)
     norm_matrix.to_csv("../results/DE/norm_matrix.tsv",sep='\t', index=True, header=True)
-
+    diff_exp_genes.to_csv("../results/DE/significant_DE_genes.tsv",sep='\t', index=True, header=True) 
+    
+    #all the data search is used to recover the genomic postions of the DE genes 
+    try:
+        subprocess.run(['bash', 'recover_DE_seqs.sh', "../results/DE/significant_DE_genes.tsv", "../data/genome/babesia_draft_clean_braker.gff"], check=True)
+    except Exception as e: 
+        ut.write(f"The position recovery was not made there was an error {e}", "DE_analysis.log","../results/DE")
 if __name__ == "__main__":
 	main()

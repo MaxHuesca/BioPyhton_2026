@@ -4,7 +4,7 @@ set -e
 set -u
 set -o pipefail  
 
-#Programa que hace la limoeza de los datos crudos de secuenciación con el programa cut adapt 
+#Programa que hace la limpieza de los datos crudos de secuenciación con el programa cut adapt 
 #Argumentos 
 #      $1:path con los directorios de los datos crudos de secuenciacion
 #      $2: argumento opcional para especificar el path de salida

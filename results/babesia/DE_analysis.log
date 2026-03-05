@@ -1,0 +1,10 @@
+There were 4078 genes in the provided count matrix
+After filtering by
+More than 5 counts per million
+Representation in at least 3 columns
+There remain 3775 genes
+Making the diferential expression analysis with pyDEseq2
+Volcano plot saved in: ../results/DE/EO1_volcano_plot.png
+93 significant genes were found
+Heatmap saved in: ../results/DE/EO1_heatmap.png
+Plots completed. Results in: ../results/DE

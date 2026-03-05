@@ -102,21 +102,21 @@ def box_plot(data:pd.DataFrame)->None:
     ------
     """
     try:
-        box_plt, ax = plt.subplots(figsize=(6, 4)) 
-        sns.boxplot(data= data,ax=ax, x="sample", y="Value", hue="Cond", palette={"Merozoite": "skyblue", "IntraEri":"lightgreen"})
+        box_plt, ax = plt.subplots(figsize=(12, 6)) 
+        sns.boxplot(data= data,ax=ax, x="sample", y="Value", hue="Cond", palette={"Merozoite": "#A0FFE6", "IntraEri":"#FFDAC1"})
         
         ax.set_title("Boxplot of the counts ditribuction", fontsize=14, fontweight="bold", fontstyle="italic", color="darkblue")
-        ax.set_facecolor("beige")
+        ax.set_facecolor("aliceblue")
         ax.figure.set_facecolor("mintcream")
-        
+        ax.grid(True, alpha=0.3)
         ax.legend(
             bbox_to_anchor=(1.02, 0.5), 
             loc='upper left',          
             borderaxespad=0, 
             fontsize = 8,
             title_fontsize=20,
-            labelcolor="g",
-            facecolor="lightblue"
+            labelcolor="black",
+            facecolor="aliceblue"
         ) 
         save_plt(box_plt,"box_exploratory.png") 
     except Exception as e: 
@@ -140,22 +140,23 @@ def density_plot(data)->None:
     ------ 
     """ 
     try:
-        den_plt=sns.displot( data=data, x="Value", hue="sample", col= "Cond", kind="kde", fill=True, alpha= 0.1)
+        den_plt=sns.displot( data=data, x="Value", hue="sample", col= "Cond", kind="kde", fill=True, alpha= 0.1,height=5,aspect=1.2)
+    
         den_plt.fig.set_facecolor("mintcream")
 
         conditions=["Merozoite", "Intra eritrocyte"]
-        # Personalizar cada subplot
         for ax,con in zip(den_plt.axes.flat, conditions):
-            ax.set_facecolor("beige")
+            ax.set_facecolor("aliceblue")
             ax.set_title(f"Density in {con}", fontsize=12, fontweight="bold", color="darkblue")
 
-        # Título general
         den_plt.fig.suptitle("Distribution of Expression Counts", fontsize=16, fontweight="bold", fontstyle="italic", color="darkblue")
-
         den_plt._legend.set_title("Samples")
         den_plt._legend.get_frame().set_facecolor("lightblue")
         den_plt._legend.get_frame().set_edgecolor("black")
         den_plt._legend.set_bbox_to_anchor((1.15, 0.5))
+        den_plt.fig.subplots_adjust(top=0.88)
+        den_plt.tight_layout()
+    
         
         save_plt(den_plt,"density_exploratory.png")
     except Exception as e: 
@@ -180,6 +181,7 @@ def PCA_plot(matrix:pd.DataFrame)->None:
     
     matrix_t=matrix.T
     try:
+     
         #PCA object
         pca= PCA(n_components=2) 
 
@@ -203,8 +205,9 @@ def PCA_plot(matrix:pd.DataFrame)->None:
                         ) 
 
         ax.set_title("PCA plot of the varition in count matrix data", fontsize=14, fontweight="bold", fontstyle="italic", color="darkblue")
-        ax.set_facecolor("beige")
+        ax.set_facecolor("aliceblue")
         ax.figure.set_facecolor("mintcream")
+        ax.grid(True, alpha=0.3)
         
         ax.legend(
             bbox_to_anchor=(1.02, 0.5), 
@@ -212,10 +215,10 @@ def PCA_plot(matrix:pd.DataFrame)->None:
             borderaxespad=0, 
             fontsize = 8,
             title_fontsize=20,
-            labelcolor="g",
-            facecolor="lightblue"
+            labelcolor="black",
+            facecolor="aliceblue"
         ) 
-        save_plt(PCA_plt,"PCA_exploratory.png") 
+        save_plt(PCA_plt,"PCA_exploratory.png")
     except Exception as e: 
         write(f"Error making the PCA {e}","exploratory.log","../results/plts")
         
@@ -365,7 +368,7 @@ def pros_matrix(raw_counts:pd.DataFrame, design:pd.DataFrame | None)->pd.DataFra
     
     #first we filter all the counts by counts per million (more than 5 counts per million) and have repressentation in at least 3 columns
     counts_per_milion=(raw_counts/raw_counts.sum())*1000000
-    df_CountFilter= raw_counts[((counts_per_milion) >= 5).sum(axis=1) >= 3]  
+    df_CountFilter= raw_counts[((counts_per_milion) >= 2).sum(axis=1) >= 3]  
     
     write(f"After filtering by\nMore than 5 counts per million\nRepresentation in at least 3 columns\nThere remain {df_CountFilter.shape[0]} genes","DE_analysis.log","../results/DE")
     
@@ -382,6 +385,7 @@ def pros_matrix(raw_counts:pd.DataFrame, design:pd.DataFrame | None)->pd.DataFra
         
     return count_transposed, dess_matrix
 
+#====================================================================================================================================================================
 
 def py_DESEQ2(trasposed_count_matrix:pd.core.frame.DataFrame, metadata_states:pd.core.frame.DataFrame) -> pd.core.frame.DataFrame: 
     """
@@ -444,8 +448,9 @@ def py_DESEQ2(trasposed_count_matrix:pd.core.frame.DataFrame, metadata_states:pd
     
     return stadistical_results_df, normalized_counts
 
+#====================================================================================================================================================================
 
-def create_volcano_plot(res_df, pval_threshold=0.05, lfc_threshold=1.0, figsize=(8, 6), output_file=None) -> None:
+def create_volcano_plot(plot_df, pval_threshold=0.05, lfc_threshold=1.0, figsize=(8, 6), output_file=None) -> None:
     """
     Makesvolcano plot from a given differential expression table
     
@@ -470,22 +475,10 @@ def create_volcano_plot(res_df, pval_threshold=0.05, lfc_threshold=1.0, figsize=
     Raises
     ------
     """
-    try:
-        # Copy, so original df is not modified
-        plot_df = res_df.copy()
-        
-        # Compute -log10(padj) managing extreme values to avoid -inf's
+    try:    
+       # Compute -log10(padj) managing extreme values to avoid -inf's
         plot_df['log10Neg'] = -np.log10(plot_df['padj'].clip(lower=1e-300)) # 1e-300 for every value under treshold
-        
-        # Defining expression categories
-        conditions = [
-            (plot_df['padj'] < pval_threshold) & (plot_df['log2FoldChange'] > lfc_threshold), # UP
-            (plot_df['padj'] < pval_threshold) & (plot_df['log2FoldChange'] < -lfc_threshold), # DOWN
-            (~((plot_df['padj'] < pval_threshold) & (plot_df['log2FoldChange'].abs() > lfc_threshold))) # Non-DE
-        ]
-        exp_type = ['UP', 'DOWN', 'Non-DE']
-        plot_df['Expression'] = np.select(conditions, exp_type, default='Non-DE') # vectorized elif
-        
+          
         # Color configuration
         colors = {"UP": "red", "DOWN": "forestgreen", "Non-DE": "darkgray"}
         
@@ -516,8 +509,10 @@ def create_volcano_plot(res_df, pval_threshold=0.05, lfc_threshold=1.0, figsize=
         
     except Exception as e:
         write(f"Error creating volcano plot: {e}","DE_analysis.log","../results/DE")    
-    
-def create_heatmap(res_df, norm_counts, pval_threshold=0.05, lfc_threshold=1.0, figsize=(12, 8), output_file=None) -> None:
+
+#====================================================================================================================================================================
+  
+def create_heatmap(res_df, norm_counts, figsize=(12, 8), output_file=None) -> None:
     """
     Makes a clustered heatmap of differentially expressed genes.
     
@@ -549,18 +544,18 @@ def create_heatmap(res_df, norm_counts, pval_threshold=0.05, lfc_threshold=1.0, 
     try:
 
         # Filter significative genes
-        significant_genes = res_df[(res_df['padj'] < pval_threshold) & (abs(res_df['log2FoldChange']) > lfc_threshold)].index
+        significant_genes = res_df.index
         
         if len(significant_genes) == 0:
             write("Advertencia: No se encontraron genes significativos para el heatmap","DE_analysis.log","../results/DE")
             return None
         
-        write(f"{len(significant_genes)} genes significativos encontrados","DE_analysis.log","../results/DE")
+        write(f"{len(significant_genes)} significant genes were found","DE_analysis.log","../results/DE")
         
         # Heatmap data
         common_genes = significant_genes.intersection(norm_counts.index)
         if len(common_genes) == 0:
-            write("Error: No hay genes comunes entre resultados y conteos normalizados","DE_analysis.log","../results/DE")
+            write("Error: No common genes between results and normalized counts","DE_analysis.log","../results/DE")
             return None
             
         heatmap_data = np.log1p(norm_counts.loc[common_genes])
@@ -585,7 +580,9 @@ def create_heatmap(res_df, norm_counts, pval_threshold=0.05, lfc_threshold=1.0, 
     except Exception as e:
         write(f"Error. Heatmap could not be made: {e}","DE_analysis.log","../results/DE")
 
-def run_all_analyses(res_df, norm_matrix, output_dir="../results/DE", prefix="", create=3, pval_threshold=0.05, lfc_threshold=1.0) -> None:
+#====================================================================================================================================================================
+
+def run_all_analyses(res_df, norm_matrix, output_dir="../results/DE", prefix="", create=3, pval_threshold=0.05, lfc_threshold=1.0) -> pd.DataFrame:
     """
     Executes the complete plot-analysis pipeline: volcano plot and heatmap.
     
@@ -604,7 +601,8 @@ def run_all_analyses(res_df, norm_matrix, output_dir="../results/DE", prefix="",
     
     Returns
     -------
-    None
+    -diff_exp_genes_df: pd.DataFrame 
+        Table with the significant DE genes 
 
     Raises
     ------
@@ -619,19 +617,32 @@ def run_all_analyses(res_df, norm_matrix, output_dir="../results/DE", prefix="",
     volcano_path = os.path.join(output_dir, f"{prefix}volcano_plot.png")
     heatmap_path = os.path.join(output_dir, f"{prefix}heatmap.png")
 
+    plot_df = res_df.copy()
+    #filter the genes 
+    # Defining expression categories
+    conditions = [
+            (plot_df['padj'] < pval_threshold) & (plot_df['log2FoldChange'] > lfc_threshold), # UP
+            (plot_df['padj'] < pval_threshold) & (plot_df['log2FoldChange'] < -lfc_threshold), # DOWN
+        ]
+    exp_type = ['UP', 'DOWN']
+    plot_df['Expression'] = np.select(conditions, exp_type, default='Non-DE') # vectorized elif 
+    
+    diff_exp_genes_df=plot_df[plot_df['Expression'] != "Non-DE"] 
+    
     match create:
         case 0: # None
             write("No plot saved","DE_analysis.log","../results/DE")
             return None
         
         case 1: # Volcano plot
-            create_volcano_plot(res_df, pval_threshold=pval_threshold, lfc_threshold=lfc_threshold, output_file=volcano_path)
+            create_volcano_plot(plot_df,pval_threshold=pval_threshold, lfc_threshold=lfc_threshold, output_file=volcano_path)
 
         case 2: # Heatmap
-            create_heatmap(res_df, norm_matrix, output_file=heatmap_path)
+            create_heatmap(diff_exp_genes_df, norm_matrix, output_file=heatmap_path)
 
         case _: # Both
-            create_volcano_plot(res_df, pval_threshold=pval_threshold, lfc_threshold=lfc_threshold, output_file=volcano_path)
-            create_heatmap(res_df, norm_matrix, output_file=heatmap_path)
+            create_volcano_plot(plot_df, pval_threshold=pval_threshold, lfc_threshold=lfc_threshold, output_file=volcano_path)
+            create_heatmap(diff_exp_genes_df, norm_matrix, output_file=heatmap_path)
 
     write(f"Plots completed. Results in: {output_dir}","DE_analysis.log","../results/DE")
+    return diff_exp_genes_df

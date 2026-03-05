@@ -1,20 +1,31 @@
 #!/bin/bash
 set -euo pipefail
-path=$1 # Path deseado
-log="$path/run_coverageBed.log"
-echo -e "Iniciando coverageBed\nPath: $path" > "$log"
-mkdir -p "$path/../tables"
 
-gff=$2 # dmel-all-r6.65.OnlyGenes.gff
+#Program to make the counts tables with bam files and gff file
+#Arguments 
+#   $1: path with the bam files
+#   $2: path with the gff file
 
-# Iterar sobre el path indicado para hacer los conteos
+path=$1 
+gff=$2 
+
+output_dir="$path/../tables"
+
+log="$output_dir/run_coverageBed.log"
+touch $log
+
+echo -e "Running coverageBed\nPath: $path" > "$log"
+mkdir -p "$output_dir"
+
+
+# loop to search into all the bam files
 for bam_file in "$path"/*.sort.bam; do
-    name="${bam_file%.sort.bam}" # Eliminamos el sufijo '.sort.bam'
+    name="${bam_file%.sort.bam}"
     base_name=$(basename "$name")
     count_file="${base_name}.count.txt"
-    
-    echo "Procesando: $bam_file" >> "$log"
-    coverageBed -a "$gff" -b "$bam_file" > "$path"/../tables/"$count_file"
+
+    echo "Proccesing: $bam_file" >> "$log"
+    coverageBed -a "$gff" -b "$bam_file" > "$output_dir$count_file"
 done
 
-echo "Conteo de archivos completo" >> "$log"
+echo "Tables generated on $output_dir" >> "$log"
